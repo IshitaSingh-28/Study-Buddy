@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <h1>Subject Syllabus Sheet</h1>
+            </header>
+            <section class="key-info">
+                <div class="info-container subject-perspective">
+                    <h2 class="info-title" onclick="toggleInfo(1)">Subject Perspective</h2>
+                    <button class="dropdown-btn" onclick="toggleInfo(1)">▼</button>
+                    <div id="info1" class="info-content">
+                        <p>Write about the subject perspective here...</p>
+                    </div>
+                </div>
+                <div class="info-container pre-requisite">
+                    <h2 class="info-title" onclick="toggleInfo(2)">Pre Requisite</h2>
+                    <button class="dropdown-btn" onclick="toggleInfo(2)">▼</button>
+                    <div id="info2" class="info-content">
+                        <p>Write about the pre requisites here...</p>
+                    </div>
+                </div>
+            </section>
+            <section class="progress">
+                <h2>Your Progress: <span id="progress">0%</span></h2>
+            </section>
+            <section class="modules">
+                <div class="module">
+                    <h2 class="module-title" onclick="toggleModule(1)">Module 1: Learn the basics</h2>
+                    <button class="dropdown-btn" onclick="toggleModule(1)">▼</button>
+                    <div id="module1" class="module-content">
+                        <h3>Lec 1: Things to Know in C++/Java/Python or any language</h3>
+                        <table>
+                            <tr>
+                                <th>Status</th>
+                                <th>Notes</th>
+                                <th>PYQs</th>
+                                <th>YouTube</th>
+                                <th>Quiz Preperation</th>
+                                <th>QnA Generation</th>
+                                <th>Chat with PDF</th>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="status-checkbox" data-module="1"></td>
+                                <td><span class="icon">📄</span></td>
+                                <td><span class="icon">📄</span></td>
+                                <td><span class="icon">▶️</span></td>
+                                <td><span class="icon">🔗</span></td>
+                                <td><span class="icon">🔗</span></td>
+                                <td><span class="icon">🔗</span></td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </table>
+                    </div>
+                </div>
+                <div class="module">
+                    <h2 class="module-title" onclick="toggleModule(2)">Module 2: Learn Important Sorting Techniques</h2>
+                    <button class="dropdown-btn" onclick="toggleModule(2)">▼</button>
+                    <div id="module2" class="module-content">
+                        <!-- Add module 2 content here -->
+                    </div>
+                </div>
+                <!-- Add more modules as needed -->
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

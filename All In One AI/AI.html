@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In One AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>All In One AI</h1>
+        <div class="responses">
+            <div class="response">
+                <h2>ChatGPT</h2>
+                <div id="chatgpt-response" class="response-box"></div>
+            </div>
+            <div class="response">
+                <h2>Copilot</h2>
+                <div id="copilot-response" class="response-box"></div>
+            </div>
+            <div class="response">
+                <h2>Backbox AI</h2>
+                <div id="backbox-response" class="response-box"></div>
+            </div>
+            <div class="response">
+                <h2>Google Gemini</h2>
+                <div id="gemini-response" class="response-box"></div>
+            </div>
+            <!-- Add more models as needed -->
+        </div>
+        <div class="input-container">
+            <textarea id="prompt" placeholder="Enter your prompt here"></textarea>
+            <button onclick="getResponses()">Get Responses</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
